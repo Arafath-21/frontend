@@ -1,0 +1,15 @@
+/* Adjust the width of the scrollbar track */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Adjust the width of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    width: 2px;
+    color: black;
+}
+
+/* Adjust the width of the scrollbar corner (where two scrollbars meet) */
+::-webkit-scrollbar-corner {
+    background-color: black; /* Adjust as needed */
+}

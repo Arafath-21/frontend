@@ -1,0 +1,10 @@
+.wrapper {
+    display: grid;
+    place-items: center;
+    height: 100vh; /*Adjust this if you want to control the vertical centering*/
+    /* margin: 50px auto; */
+}
+
+.card{
+    border: none !important;
+}

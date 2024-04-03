@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+img.logo-img{
+  margin-top: 15px;
+}
+.bg-img {
+  height: 540px;
+  background-image: url('../../../assets/pexels-abby-chung-1106468.jpg');
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Keep the background image fixed while scrolling */
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffba; /* Adjust the alpha value to control the opacity of the background image */
+  z-index: 1;
+}
+
+.bg-content {
+  position: relative; /* Change to relative */
+  padding: 55px 95px;
+  font-size: 20px;
+  font-weight: bolder;
+  z-index: 2;
+}
+
+@media only screen and (max-width:670px) {
+  .bg-img{
+    display: none;
+  }
+  .logo .quote{
+    display: none;
+  }
+  img.logo-img {
+    width: 50% !important;
+  }
+  .login-content .h1{
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .login-content .h3{
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width:770px) {
+  .bg-img{
+    display: none;
+  }  
+  img.logo-img{
+    width: 75%;
+    margin-bottom: 20px;
+  }
+  .logo .quote{
+    display: none;
+  }
+  button .btn .btn-primary{
+    margin-bottom: 15px;
+  }
+}
